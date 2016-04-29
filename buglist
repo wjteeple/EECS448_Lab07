@@ -1,0 +1,17 @@
+Observations
+
+1. No clear way to check results of isEmpty. False output may result from incorrect size comparison  	or constant false in return statement
+2. When a linked list is initialized, the default value for m_size is not 0 for an empty list
+3. AddBack increments correctly, but the value is not being added correctly. Value, override, but    	cannot verify if node is actually added to the back
+4. Mimiced testing for addFront. Incrementing and adding is done correctly
+5. RemoveBack fails, but only as a result of AddBack being incorrect
+6. Using AddFront instead, RemoveBack seems to remove the node successfully
+7. RemoveFront fails. Since all tests passed addFront, we can assume that removeFront is incorrect
+
+
+Bug Guesses
+
+1. Potential error in isEmpty(), but source cannot be verified
+2. m_size is not properly initialized when a linked list is constructed
+3. addBack() does not properly add a node to the list, value in the node is not correct
+4. removeFront() does not properly remove a node from the front of the list
